@@ -17,18 +17,30 @@ shinyUI(pageWithSidebar(
   # and a sidebar panel containing examples of each type of input
     sidebarPanel(
     # now declare each of the components in the sidebar
+
       # declare an ActionButton
         actionButton("action", "Action Button Label", icon("calendar")),
+        
       #checkboxGroupInput	A group of check boxes
+      
       #checkboxInput	A single check box
+      
       # declare a dateInput to aid date selection
         dateInput("date", "St. Patrick's Day", value="2015-03-17", 
                   min="01-01-2015", max="31-12-2015", format="yyyy-mm-dd",
                   startview="month", weekstart=1, language="en"),
       #dateRangeInput	A pair of calendars for selecting a date range
       #fileInput	A file upload control wizard
+      
       #helpText	Help text that can be added to an input form
-      #numericInput	A field to enter numbers
+      helpText("Note: while the data view will show only",
+               "the specified number of observations, the",
+               "summary will be based on the full dataset."),
+      
+      #declare a numericInput to enter numbers
+        numericInput("number-field", "Number of Seats (2..7)", 
+                     min=2, max = 7, value=5),
+      
       #radioButtons	A set of radio buttons
       
       # declare a selectInputBox for input choices
