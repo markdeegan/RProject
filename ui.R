@@ -18,20 +18,30 @@ shinyUI(pageWithSidebar(
     sidebarPanel(
     # now declare each of the components in the sidebar
       # declare an ActionButton
-        actionButton("action", "Action Button")
+        actionButton("action", "Action Button Label", icon("calendar")),
       #checkboxGroupInput	A group of check boxes
       #checkboxInput	A single check box
-      #dateInput	A calendar to aid date selection
+      # declare a dateInput to aid date selection
+        dateInput("date", "St. Patrick's Day", value="2015-03-17", 
+                  min="01-01-2015", max="31-12-2015", format="yyyy-mm-dd",
+                  startview="month", weekstart=1, language="en"),
       #dateRangeInput	A pair of calendars for selecting a date range
       #fileInput	A file upload control wizard
       #helpText	Help text that can be added to an input form
       #numericInput	A field to enter numbers
       #radioButtons	A set of radio buttons
       #selectInput	A box with choices to select from
-      #sliderInput	A slider bar
-      #submitButton	A submit button
-      #textInput	A field to enter tex
-      ),
+
+      # declare a slider bar to select a value between 1 and 15
+        sliderInput("slider-field", "Please select the quantity required", 
+                    min=5, max = 25, value=10, step=1, ticks=TRUE),
+      
+      # declare a testInputField to enter text
+        textInput("text-field", "Please enter some text"),
+
+      # declare a submit button
+      submitButton("Submit All Values", icon("refresh", lib="glyphicon"))
+    ),
     # the fuid page also contains a mainPanel which we wil declare now
     mainPanel(
       # let's define some labels in the mainPanel
