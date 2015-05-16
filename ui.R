@@ -30,7 +30,12 @@ shinyUI(pageWithSidebar(
       #helpText	Help text that can be added to an input form
       #numericInput	A field to enter numbers
       #radioButtons	A set of radio buttons
-      #selectInput	A box with choices to select from
+      
+      # declare a selectInputBox for input choices
+        selectInput("select-field", "Select Transmission Options", 
+                    c("Manual 6-Speed" = "m6", 
+                      "Automatic" = "auto", 
+                      "CVT" = "cvt")),
 
       # declare a slider bar to select a value between 1 and 15
         sliderInput("slider-field", "Please select the quantity required", 
