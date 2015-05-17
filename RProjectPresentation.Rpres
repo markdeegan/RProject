@@ -1,7 +1,7 @@
-RProjectPresentation
+R Project Presentation
 ========================================================
-author: 
-date: 
+author: Mark Deegan
+date: `r date()`
 
 First Slide
 ========================================================
@@ -25,4 +25,22 @@ Slide With Plot
 
 ```{r, echo=FALSE}
 plot(cars)
+```
+
+Slide with C
+========================================================
+```C
+int main(int argc, char** argv)
+{
+  printf("Hello World\n");
+}
+```
+
+Slide with Java
+========================================================
+```Java
+public static void main(String[] args)
+{
+  System.out.println("Hello World");
+}
 ```

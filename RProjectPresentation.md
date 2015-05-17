@@ -1,7 +1,7 @@
-RProjectPresentation
+R Project Presentation
 ========================================================
-author: 
-date: 
+author: Mark Deegan
+date: Sun May 17 12:19:54 2015
 
 First Slide
 ========================================================
@@ -35,3 +35,21 @@ Slide With Plot
 ========================================================
 
 ![plot of chunk unnamed-chunk-2](RProjectPresentation-figure/unnamed-chunk-2-1.png) 
+
+Slide with C
+========================================================
+```C
+int main(int argc, char** argv)
+{
+  printf("Hello World\n");
+}
+```
+
+Slide with Java
+========================================================
+```Java
+public static void main(String[] args)
+{
+  System.out.println("Hello World");
+}
+```
