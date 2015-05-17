@@ -59,6 +59,8 @@ shinyUI(pageWithSidebar(
                        separator = " to "),
       
       #fileInput	A file upload control wizard
+        fileInput("flie-input", "Please upload further instructions", 
+                  multiple = FALSE, accept = NULL),
       
       #declare a numericInput to enter numbers
         numericInput("number-field", "Number of Seats (2..7)", 
@@ -88,9 +90,11 @@ shinyUI(pageWithSidebar(
     ),
     # the fuid page also contains a mainPanel which we wil declare now
     mainPanel(
-      # let's define some labels in the mainPanel
-      h3("Testing values of input components")
-    # end the declaration of the mainPanel
+    # let's define some labels in the mainPanel
+      h3("Testing values of input components"),
+        # textOutput("outputID1", container = div, inline = TRUE),
+        verbatimTextOutput("answer")
+      # end the declaration of the mainPanel
     )
   # end the declaration of the pageWithSidebar
   )
