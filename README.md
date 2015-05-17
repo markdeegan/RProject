@@ -4,10 +4,10 @@
 ### Requirements
 Your Shiny Application
 
-1 Write a shiny application with associated supporting documentation. The documentation should be thought of as whatever a user will need to get started using your application.
-2 Deploy the application on Rstudio's shiny server
-3 Share the application link by pasting it into the text box below
-4 Share your server.R and ui.R code on github
+1. Write a shiny application with associated supporting documentation. The documentation should be thought of as whatever a user will need to get started using your application.
+2. Deploy the application on Rstudio's shiny server
+3. Share the application link by pasting it into the text box below
+4. Share your server.R and ui.R code on github
 
 The application must include the following:
 - Some form of input (widget: textbox, radio button, checkbox, ...)
