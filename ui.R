@@ -93,7 +93,9 @@ shinyUI(pageWithSidebar(
     # let's define some labels in the mainPanel
       h3("Testing values of input components"),
         # textOutput("outputID1", container = div, inline = TRUE),
-        verbatimTextOutput("answer")
+        verbatimTextOutput("answer"),
+        verbatimTextOutput("answer2")
+      
       # end the declaration of the mainPanel
     )
   # end the declaration of the pageWithSidebar

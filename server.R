@@ -13,7 +13,8 @@ library(shiny)
 shinyServer(function(input, output)
   # start declaration of the server function
     {
-      output$answer <- renderPrint({"hello"})
+      output$answer  <- renderPrint({"hello"})
+      output$answer2 <- renderPrint({"hello again"})
   # end declaration of the server function
     }
 # end declaration of the sinyServer
